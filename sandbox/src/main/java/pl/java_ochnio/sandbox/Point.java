@@ -14,7 +14,7 @@ public class Point {
     Point B = new Point();
     B.x = 10;
     B.y = 100;
-    
+
     System.out.println("Współrzędne punktu A wynoszą: " + A.x + " , "+ A.y);
     System.out.println("Współrzędne punktu B wynoszą: " + B.x + " , "+ B.y);
 
