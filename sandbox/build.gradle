@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "MyFirstProgram"
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation 'org.testng:testng:7.6.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+test{
+    useJUnitPlatform()
+}
