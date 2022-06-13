@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation 'org.testng:testng:7.6.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+	implementation 'org.seleniumhq.selenium:selenium-java:4.2.2'
+}
+
+test{
+    useJUnitPlatform()
+}
