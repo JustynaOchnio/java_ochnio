@@ -37,6 +37,16 @@ public class ContactCreationTests {
         fillBirthdayDate();
         fillAnniversaryDate();
         selectGroup();
+        submitContactCreation();
+        returnToHomePage();
+
+    }
+
+    private void returnToHomePage() {
+        wd.findElement(By.linkText("home")).click();
+    }
+
+    private void submitContactCreation() {
         wd.findElement(By.xpath("//div[@id='content']/form/select[5]/option[2]")).click();
         wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
@@ -129,7 +139,12 @@ public class ContactCreationTests {
 
     @AfterClass(alwaysRun = true)
     public void tearDown() throws Exception {
+        logout();
         wd.quit();
+    }
+
+    private void logout() {
+        wd.findElement(By.linkText("Logout")).click();
     }
 
     private boolean isElementPresent(By by) {
