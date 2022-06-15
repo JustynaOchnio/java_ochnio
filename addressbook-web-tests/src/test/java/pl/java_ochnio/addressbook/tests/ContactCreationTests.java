@@ -1,4 +1,4 @@
-package pl.java_ochnio.addressbook;
+package pl.java_ochnio.addressbook.tests;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,6 +7,8 @@ import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import pl.java_ochnio.addressbook.model.GroupDataBirthday;
+import pl.java_ochnio.addressbook.model.GroupDataContacts;
 
 public class ContactCreationTests {
     private WebDriver wd;
