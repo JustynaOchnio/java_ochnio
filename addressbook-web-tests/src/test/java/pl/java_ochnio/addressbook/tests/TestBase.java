@@ -1,5 +1,6 @@
 package pl.java_ochnio.addressbook.tests;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pl.java_ochnio.addressbook.appmanager.ApplicationManager;

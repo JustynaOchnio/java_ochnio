@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import pl.java_ochnio.addressbook.model.GroupData;
 
 public class GroupHelper {
-    public WebDriver wd;
+    private WebDriver wd;
 
     public GroupHelper(WebDriver wd) {
         this.wd = wd;

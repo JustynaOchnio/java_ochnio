@@ -1,7 +1,6 @@
 package pl.java_ochnio.addressbook.tests;
 
 import org.testng.annotations.*;
-import org.openqa.selenium.*;
 import pl.java_ochnio.addressbook.model.GroupData;
 
 public class GroupCreationTests extends TestBase {
@@ -13,7 +12,7 @@ public class GroupCreationTests extends TestBase {
         app.getGroupHelper().fillGroupForm(new GroupData("test1", "test2", "test3"));
         app.getGroupHelper().submitGroupCreation();
         app.getGroupHelper().returnToGroupPage();
-        app.getGroupHelper().wd.findElement(By.linkText("Logout")).click();
+        app.logout();
     }
 
 }

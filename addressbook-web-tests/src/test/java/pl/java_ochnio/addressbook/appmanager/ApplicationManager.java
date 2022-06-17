@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager extends NavigationHelper {
 
-    public WebDriver wd;
+    WebDriver wd;
     private GroupHelper groupHelper;
 
     public void init() {
@@ -30,6 +30,10 @@ public class ApplicationManager extends NavigationHelper {
         wd.findElement(By.name("pass")).clear();
         wd.findElement(By.name("pass")).sendKeys(password);
         wd.findElement(By.xpath("//input[@value='Login']")).click();
+    }
+
+    public void logout() {
+       wd.findElement(By.linkText("Logout")).click();
     }
 
     public void gotoGroupPage() {
