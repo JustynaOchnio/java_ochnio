@@ -19,7 +19,7 @@ public class GroupHelper extends HelperBase {
     }
 
     public void fillGroupForm(GroupData groupData) {
-        wd.findElement(By.id("content")).click();
+        click(By.id("content"));
         type(By.name("group_name"), groupData.name());
         type(By.name("group_header"), groupData.header());
         type(By.name("group_footer"), groupData.footer());
@@ -30,7 +30,7 @@ public class GroupHelper extends HelperBase {
     }
 
     public void deleteSelectedGroups() {
-        wd.findElement(By.xpath("//div[@id='content']/form/input[5]")).click();
+        click(By.xpath("//div[@id='content']/form/input[5]"));
     }
 
     public void selectGroup() {
