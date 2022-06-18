@@ -60,7 +60,20 @@
       <recent name="pl.java_ochnio.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.pl.java_ochnio.addressbook.tests">
+  <component name="RunManager" selected="TestNG.ContactCreationTests">
+    <configuration name="Equality" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.sandbox.Equality" />
+      <module name="sandbox.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.java_ochnio.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -88,23 +101,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactModificationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EquationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.java_ochnio.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.java_ochnio.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.sandbox.EquationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -147,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.pl.java_ochnio.addressbook.tests" />
         <item itemvalue="TestNG.ContactCreationTests" />
+        <item itemvalue="TestNG.pl.java_ochnio.addressbook.tests" />
+        <item itemvalue="Application.Equality" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.ContactModificationTests" />
-        <item itemvalue="TestNG.EquationTests" />
       </list>
     </recent_temporary>
   </component>
