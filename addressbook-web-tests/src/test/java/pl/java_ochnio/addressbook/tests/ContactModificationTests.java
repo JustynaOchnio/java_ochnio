@@ -1,7 +1,6 @@
 package pl.java_ochnio.addressbook.tests;
 
 import org.testng.annotations.Test;
-import pl.java_ochnio.addressbook.model.GroupData;
 import pl.java_ochnio.addressbook.model.GroupDataContacts;
 
 public class ContactModificationTests extends TestBase{
