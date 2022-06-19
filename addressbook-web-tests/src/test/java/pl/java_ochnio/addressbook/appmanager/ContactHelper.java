@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import pl.java_ochnio.addressbook.model.ContactBirthdayData;
 import pl.java_ochnio.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
@@ -21,16 +20,6 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form/input[21]"));
     }
 
-    public void fillBirthdayDate(ContactBirthdayData contactBirthdayData) {
-        click(By.name("bday"));
-        new Select(wd.findElement(By.name("bday"))).selectByVisibleText(contactBirthdayData.day());
-        click(By.xpath("//option[@value='1']"));
-        click(By.name("bmonth"));
-        new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(contactBirthdayData.month());
-        click(By.xpath("//option[@value='January']"));
-        type(By.name("byear"), contactBirthdayData.year());
-    }
-
     public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
@@ -39,6 +28,10 @@ public class ContactHelper extends HelperBase {
         type(By.name("address"), contactData.getAddress());
         type(By.name("mobile"), contactData.getPhone());
         type(By.name("email"), contactData.getEmail());
+
+        new Select(wd.findElement(By.name("bday"))).selectByVisibleText(contactData.getDay());
+        new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(contactData.getMonth());
+        type(By.name("byear"), contactData.getYear());
 
         if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
