@@ -3,8 +3,9 @@ package pl.java_ochnio.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
-import pl.java_ochnio.addressbook.model.GroupDataBirthday;
-import pl.java_ochnio.addressbook.model.GroupDataContacts;
+import org.testng.Assert;
+import pl.java_ochnio.addressbook.model.ContactBirthdayData;
+import pl.java_ochnio.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
     public ContactHelper(WebDriver wd) {
@@ -20,29 +21,31 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form/input[21]"));
     }
 
-    public void selectContactGroup() {
-        click(By.name("new_group"));
-        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText("test1");
-    }
-
-    public void fillBirthdayDate(GroupDataBirthday groupDataBirthday) {
+    public void fillBirthdayDate(ContactBirthdayData contactBirthdayData) {
         click(By.name("bday"));
-        new Select(wd.findElement(By.name("bday"))).selectByVisibleText(groupDataBirthday.day());
+        new Select(wd.findElement(By.name("bday"))).selectByVisibleText(contactBirthdayData.day());
         click(By.xpath("//option[@value='1']"));
         click(By.name("bmonth"));
-        new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(groupDataBirthday.month());
+        new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(contactBirthdayData.month());
         click(By.xpath("//option[@value='January']"));
-        type(By.name("byear"), groupDataBirthday.year());
+        type(By.name("byear"), contactBirthdayData.year());
     }
 
-    public void fillContactForm(GroupDataContacts groupDataContacts) {
-        type(By.name("firstname"), groupDataContacts.firstname());
-        type(By.name("lastname"), groupDataContacts.lastname());
-        type(By.name("title"), groupDataContacts.title());
-        type(By.name("company"), groupDataContacts.company());
-        type(By.name("address"), groupDataContacts.address());
-        type(By.name("mobile"), groupDataContacts.phone());
-        type(By.name("email"), groupDataContacts.email());
+    public void fillContactForm(ContactData contactData, boolean creation) {
+        type(By.name("firstname"), contactData.getFirstname());
+        type(By.name("lastname"), contactData.getLastname());
+        type(By.name("title"), contactData.getTitle());
+        type(By.name("company"), contactData.getCompany());
+        type(By.name("address"), contactData.getAddress());
+        type(By.name("mobile"), contactData.getPhone());
+        type(By.name("email"), contactData.getEmail());
+
+        if (creation) {
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
+
     }
 
     public void openNewContactPage() {
