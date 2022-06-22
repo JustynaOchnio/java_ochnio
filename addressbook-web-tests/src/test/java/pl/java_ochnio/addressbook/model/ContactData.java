@@ -10,9 +10,9 @@ public class ContactData {
     private final String phone;
     private final String email;
     private final String group;
-    private String day;
-    private String month;
-    private String year;
+    private final String day;
+    private final String month;
+    private final String year;
 
     public ContactData(String firstname, String lastname, String title, String company, String address,
                        String phone, String email, String group, String day, String month, String year) {
