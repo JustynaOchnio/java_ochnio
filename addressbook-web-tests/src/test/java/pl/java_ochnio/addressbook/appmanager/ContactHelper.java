@@ -83,7 +83,7 @@ public class ContactHelper extends HelperBase {
 
     public List<ContactData> getContactList() {
         List<ContactData> contacts = new ArrayList<ContactData>();
-        List<WebElement> elements = wd.findElements(By.name("selected[]"));
+        List<WebElement> elements = wd.findElements(By.tagName("tr"));
         for (WebElement element : elements) {
             String name = element.getText();
             ContactData contact = new ContactData("firstname", "lastname", null, null, null, null, null);
@@ -92,3 +92,6 @@ public class ContactHelper extends HelperBase {
         return contacts;
     }
 }
+
+//xpath=//table[@id='maintable']/tbody/tr[20]/td
+       // css= tr:nth-child(3) td:nth-child(2)#maintable
