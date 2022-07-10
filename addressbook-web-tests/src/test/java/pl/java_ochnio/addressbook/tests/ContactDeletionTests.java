@@ -3,8 +3,6 @@ package pl.java_ochnio.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pl.java_ochnio.addressbook.model.ContactData;
-import pl.java_ochnio.addressbook.model.GroupData;
-
 import java.util.List;
 
 public class ContactDeletionTests extends TestBase {

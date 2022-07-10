@@ -3,9 +3,7 @@ package pl.java_ochnio.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pl.java_ochnio.addressbook.model.GroupData;
-
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class GroupModificationTests extends TestBase {
