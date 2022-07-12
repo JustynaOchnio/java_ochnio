@@ -21,5 +21,4 @@ public class ContactCreationTests extends TestBase {
         before.add(contact);
         Assert.assertEquals(before, after);
     }
-
 }
