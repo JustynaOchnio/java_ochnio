@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import pl.java_ochnio.addressbook.model.ContactData;
 import pl.java_ochnio.addressbook.model.Contacts;
+import pl.java_ochnio.addressbook.model.Groups;
 
 import java.util.HashSet;
 import java.util.List;
@@ -73,6 +74,7 @@ public class ContactHelper extends HelperBase {
         openNewContactPage();
         fillContactForm(contact, true);
         submitContactCreation();
+        contactCache = null;
         returnToContactPage();
     }
 
@@ -81,6 +83,7 @@ public class ContactHelper extends HelperBase {
         initContactModification();
         fillContactForm(contact, false);
         submitContactModification();
+        contactCache = null;
         returnToContactPage();
     }
 
@@ -88,6 +91,7 @@ public class ContactHelper extends HelperBase {
         selectContactById(contact.getId());
         deleteContact();
         confirmDeletion();
+        contactCache = null;
         returnToContactPage();
     }
 
@@ -99,17 +103,22 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
+    private Contacts contactCache = null;
 
     public Contacts all() {
-        Contacts contacts = new Contacts();
+        if (contactCache != null) {
+            return new Contacts(contactCache);
+        }
+
+        contactCache = new Contacts();
         List<WebElement> elements = wd.findElements(By.cssSelector("[name='entry']"));
         for (WebElement element : elements) {
             String firstname = (element.findElement(By.cssSelector("td:nth-child(3)")).getText());
             String lastname = (element.findElement(By.cssSelector("td:nth-child(2)")).getText());
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname));
+            contactCache.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname));
         }
-        return contacts;
+        return new Contacts(contactCache);
     }
 
 
