@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="slf4j-nop (2)">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../sandbox/libs/slf4j-nop.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

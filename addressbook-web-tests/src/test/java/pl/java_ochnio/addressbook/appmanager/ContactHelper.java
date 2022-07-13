@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import pl.java_ochnio.addressbook.model.ContactData;
+import pl.java_ochnio.addressbook.model.Contacts;
 
 import java.util.HashSet;
 import java.util.List;
@@ -99,8 +100,8 @@ public class ContactHelper extends HelperBase {
     }
 
 
-    public Set<ContactData> all() {
-        Set<ContactData> contacts = new HashSet<ContactData>();
+    public Contacts all() {
+        Contacts contacts = new Contacts();
         List<WebElement> elements = wd.findElements(By.cssSelector("[name='entry']"));
         for (WebElement element : elements) {
             String firstname = (element.findElement(By.cssSelector("td:nth-child(3)")).getText());
