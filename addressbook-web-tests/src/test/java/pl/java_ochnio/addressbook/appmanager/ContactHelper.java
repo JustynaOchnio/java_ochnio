@@ -26,6 +26,7 @@ public class ContactHelper extends HelperBase {
     public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
+        attach(By.name("photo"), contactData.getPhoto());
         type(By.name("company"), contactData.getCompany());
         type(By.name("address"), contactData.getAddress());
         type(By.name("home"), contactData.getHomePhone());
@@ -52,12 +53,12 @@ public class ContactHelper extends HelperBase {
     }
 
     public void initContactModificationById(int id) {
-        WebElement checkbox = wd.findElement(By.cssSelector(String.format("input[value= '%s']",id)));
+        WebElement checkbox = wd.findElement(By.cssSelector(String.format("input[value= '%s']", id)));
         WebElement row = checkbox.findElement(By.xpath("./../.."));
         List<WebElement> cells = row.findElements(By.tagName("td"));
         cells.get(7).findElement(By.tagName("a")).click();
 
-     //   wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
+        //   wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
     }
 
     public ContactData infoFromEditForm(ContactData contact) {

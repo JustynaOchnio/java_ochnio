@@ -68,7 +68,7 @@
       <recent name="pl.java_ochnio.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactPhoneAddressEmailTests">
+  <component name="RunManager" selected="TestNG.ContactCreationTests">
     <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -155,9 +155,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="TestNG.ContactPhoneAddressEmailTests" />
         <item itemvalue="TestNG.ContactDetailsTests" />
-        <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="TestNG.pl.java_ochnio.addressbook.tests" />
         <item itemvalue="TestNG.ContactEmailTests" />
       </list>
@@ -180,6 +180,15 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/appmanager/ContactHelper.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="pl.java_ochnio.addressbook.appmanager.ApplicationManager" memberName="groupHelper" />
@@ -190,7 +199,7 @@
         <watch expression="invokedMethod" />
         <watch expression="contact" />
       </configuration>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/appmanager/HelperBase.java" line="14">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/appmanager/HelperBase.java" line="17">
         <watch expression="((ByName)locator).fallback" language="JAVA" custom="org.openqa.selenium.By.ByName" />
       </inline-watch>
     </watches-manager>
