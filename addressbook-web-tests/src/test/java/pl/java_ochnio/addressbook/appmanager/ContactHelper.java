@@ -7,8 +7,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import pl.java_ochnio.addressbook.model.ContactData;
 import pl.java_ochnio.addressbook.model.Contacts;
+import pl.java_ochnio.addressbook.tests.ContactPhoneAddressEmailTests;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ContactHelper extends HelperBase {
     public ContactHelper(WebDriver wd) {
@@ -75,6 +78,25 @@ public class ContactHelper extends HelperBase {
                 .withEmail(email).withEmail2(email2).withEmail3(email3);
 
     }
+
+    public void openContactDetailsById(int id) {
+        wd.findElement(By.cssSelector(String.format("a[href='view.php?id=%s']", id))).click();
+    }
+
+    public ContactData infoFromDetails(ContactData contact) {
+        openContactDetailsById(contact.getId());
+        WebElement data = wd.findElement(By.id("content"));
+        String text = data.getText();
+        String[] elements = text.split("\n");
+        String email1 = data.findElement(By.xpath(String.format("//*[@id=\"content\"]/a[1]"))).getText();
+        String email2 = data.findElement(By.xpath(String.format("//*[@id=\"content\"]/a[2]"))).getText();
+        String email3 = data.findElement(By.xpath(String.format("//*[@id=\"content\"]/a[3]"))).getText();
+        wd.navigate().back();
+        return new ContactData().withId(contact.getId()).withFirstnameLastname(elements[0])
+                .withAddress(elements[1]).withHomePhone(elements[3]).withMobilePhone(elements[4]).withWorkPhone(elements[5])
+                .withEmail(email1).withEmail2(email2).withEmail3(email3);
+    }
+
     public void submitContactModification() {
         click(By.xpath("//div[@id='content']/form/input[22]"));
     }
@@ -86,7 +108,6 @@ public class ContactHelper extends HelperBase {
     public void deleteContact() {
         click(By.xpath("//input[@value='Delete']"));
     }
-
 
     public void confirmDeletion() {
         wd.switchTo().alert().accept();
@@ -152,7 +173,5 @@ public class ContactHelper extends HelperBase {
         }
         return new Contacts(contactCache);
     }
-
-
 
 }

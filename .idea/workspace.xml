@@ -69,23 +69,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.ContactPhoneAddressEmailTests">
-    <configuration name="ContactAddressTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.java_ochnio.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactAddressTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -96,6 +79,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactDetailsTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.java_ochnio.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactDetailsTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -156,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ContactPhoneAddressEmailTests" />
-        <item itemvalue="TestNG.ContactEmailTests" />
-        <item itemvalue="TestNG.pl.java_ochnio.addressbook.tests" />
+        <item itemvalue="TestNG.ContactDetailsTests" />
         <item itemvalue="TestNG.ContactCreationTests" />
-        <item itemvalue="TestNG.ContactAddressTests" />
+        <item itemvalue="TestNG.pl.java_ochnio.addressbook.tests" />
+        <item itemvalue="TestNG.ContactEmailTests" />
       </list>
     </recent_temporary>
   </component>
