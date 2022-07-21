@@ -1,7 +1,11 @@
 package pl.java_ochnio.addressbook.model;
 
-public class GroupData {
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
+@XStreamAlias("group")
+public class GroupData {
+@XStreamOmitField
     private int id = Integer.MAX_VALUE;;
     private String name;
     private String header;
