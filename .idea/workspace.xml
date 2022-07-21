@@ -68,7 +68,22 @@
       <recent name="pl.java_ochnio.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests">
+  <component name="RunManager" selected="Application.ContactDataGenerator">
+    <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.ContactDataGenerator" />
+      <module name="addressbook-web-tests.test" />
+      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/contacts.json -d json" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.java_ochnio.addressbook.generators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -94,23 +109,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactCreationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactPhoneAddressEmailTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.java_ochnio.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactPhoneAddressEmailTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -154,19 +152,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="TestNG.GroupCreationTests" />
       <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
       <item itemvalue="TestNG.ContactCreationTests" />
-      <item itemvalue="TestNG.ContactPhoneAddressEmailTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ContactDataGenerator" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
         <item itemvalue="TestNG.ContactCreationTests" />
-        <item itemvalue="TestNG.ContactPhoneAddressEmailTests" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +191,16 @@
           <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/appmanager/ContactHelper.java</url>
           <line>28</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/generators/ContactDataGenerator.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/generators/ContactDataGenerator.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.reflect.InaccessibleObjectException" package="java.lang.reflect" />
