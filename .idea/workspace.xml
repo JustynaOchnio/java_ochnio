@@ -69,10 +69,10 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.ContactCreationTests.testContactCreation">
-    <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.GroupDataGenerator" />
+    <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/groups.json -d json" />
+      <option name="PROGRAM_PARAMETERS" value="-c 1 -f src/test/resources/contacts.xml -d xml" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -84,10 +84,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pl.java_ochnio.addressbook.generators.ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.ContactDataGenerator" />
+    <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 1 -f src/test/resources/contacts.json -d json" />
+      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/groups.json -d json" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +153,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.pl.java_ochnio.addressbook.generators.ContactDataGenerator" />
+      <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
       <item itemvalue="TestNG.GroupCreationTests" />
@@ -162,10 +162,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
-        <item itemvalue="Application.pl.java_ochnio.addressbook.generators.ContactDataGenerator" />
+        <item itemvalue="Application.ContactDataGenerator" />
         <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
-        <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="Application.GroupDataGenerator" />
+        <item itemvalue="TestNG.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>

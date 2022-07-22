@@ -1,7 +1,6 @@
 <list>
   <contact>
-    <firstname>firstname
-0</firstname>
+    <firstname>firstname 0</firstname>
     <lastname>lastname
 0</lastname>
     <company>company
@@ -20,52 +19,6 @@
 0</email2>
     <email3>email3
 0</email3>
-    <group>test</group>
-  </contact>
-  <contact>
-    <firstname>firstname
-1</firstname>
-    <lastname>lastname
-1</lastname>
-    <company>company
-1</company>
-    <address>address
-1</address>
-    <homePhone>10
-1</homePhone>
-    <mobilePhone>15
-1</mobilePhone>
-    <workPhone>20
-1</workPhone>
-    <email>email1
-1</email>
-    <email2>email2
-1</email2>
-    <email3>email3
-1</email3>
-    <group>test</group>
-  </contact>
-  <contact>
-    <firstname>firstname
-2</firstname>
-    <lastname>lastname
-2</lastname>
-    <company>company
-2</company>
-    <address>address
-2</address>
-    <homePhone>10
-2</homePhone>
-    <mobilePhone>15
-2</mobilePhone>
-    <workPhone>20
-2</workPhone>
-    <email>email1
-2</email>
-    <email2>email2
-2</email2>
-    <email3>email3
-2</email3>
     <group>test</group>
   </contact>
 </list>
