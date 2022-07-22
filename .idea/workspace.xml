@@ -46,60 +46,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowBuild.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/QA course/GitHub/java_ochnio/addressbook-web-tests&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalDependencies&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowBuild.ShowToolbar": "false",
+    "last_opened_file_path": "C:/QA course/GitHub/java_ochnio/addressbook-web-tests/libs",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.externalDependencies"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.java_ochnio.addressbook.appmanager" />
       <recent name="pl.java_ochnio.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactCreationTests.testContactCreation">
-    <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.ContactDataGenerator" />
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
+    <configuration name="C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-contacts.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 1 -f src/test/resources/contacts.xml -d xml" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.java_ochnio.addressbook.generators.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.GroupDataGenerator" />
+    <configuration name="C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-groups.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/groups.json -d json" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.java_ochnio.addressbook.generators.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactCreationTests.testContactCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactDetailsTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -108,9 +98,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactCreationTests" />
-      <option name="METHOD_NAME" value="testContactCreation" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactDetailsTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.java_ochnio.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactModificationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -134,38 +140,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreationTests.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.java_ochnio.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.GroupCreationTests" />
-      <option name="METHOD_NAME" value="testGroupCreation" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.ContactDataGenerator" />
-      <item itemvalue="Application.GroupDataGenerator" />
-      <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
+      <item itemvalue="TestNG.C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
+      <item itemvalue="TestNG.C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-groups.xml" />
+      <item itemvalue="TestNG.ContactDetailsTests" />
+      <item itemvalue="TestNG.ContactModificationTests" />
       <item itemvalue="TestNG.GroupCreationTests" />
-      <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
-        <item itemvalue="Application.ContactDataGenerator" />
-        <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
-        <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="TestNG.GroupCreationTests" />
+        <item itemvalue="TestNG.C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
+        <item itemvalue="TestNG.C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-groups.xml" />
+        <item itemvalue="TestNG.ContactDetailsTests" />
+        <item itemvalue="TestNG.ContactModificationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +180,11 @@
           <properties class="java.lang.reflect.InaccessibleObjectException" package="java.lang.reflect" />
           <option name="timeStamp" value="22" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/appmanager/ContactHelper.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

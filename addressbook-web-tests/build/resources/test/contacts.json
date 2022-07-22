@@ -1,0 +1,15 @@
+[
+  {
+    "firstname": "firstname 0",
+    "lastname": "lastname\n0",
+    "company": "company\n0",
+    "address": "address\n0",
+    "homePhone": "10\n0",
+    "mobilePhone": "15\n0",
+    "workPhone": "20\n0",
+    "email": "email1\n0",
+    "email2": "email2\n0",
+    "email3": "email3\n0",
+    "group": "test"
+  }
+]
