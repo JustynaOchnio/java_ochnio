@@ -7,7 +7,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.thoughtworks.xstream.XStream;
 import pl.java_ochnio.addressbook.model.ContactData;
-import pl.java_ochnio.addressbook.model.GroupData;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -41,7 +40,7 @@ public class ContactDataGenerator {
 
     private void run() throws IOException {
         List<ContactData> contacts = generateContacts(count);
-        if(format.equals("csv")) {
+        if (format.equals("csv")) {
             saveAsCsv(contacts, new File(file));
         } else if (format.equals("xml")) {
             saveAsXml(contacts, new File(file));
@@ -85,12 +84,18 @@ public class ContactDataGenerator {
     private List<ContactData> generateContacts(int count) {
         List<ContactData> contacts = new ArrayList<ContactData>();
         for (int i = 0; i < count; i++) {
-            contacts.add(new ContactData().withFirstname(String.format("firstname\n%s", i))
-                    .withLastname(String.format("lastname\n%s", i)).withCompany(String.format("company\n%s", i)).
-                    withAddress(String.format("address\n%s", i)).withHomePhone(String.format("10\n%s", i))
-                    .withMobilePhone(String.format("15\n%s", i)).withWorkPhone(String.format("20\n%s", i))
-                    .withEmail(String.format("email1\n%s", i)).withEmail2(String.format("email2\n%s", i))
-                    .withEmail3(String.format("email3\n%s", i)).withGroup(String.format("test1\n%s", i)));
+            contacts.add(new ContactData()
+                    .withFirstname(String.format("firstname %s", i))
+                    .withLastname(String.format("lastname\n%s", i))
+                    .withCompany(String.format("company\n%s", i))
+                    .withAddress(String.format("address\n%s", i))
+                    .withHomePhone(String.format("10\n%s", i))
+                    .withMobilePhone(String.format("15\n%s", i))
+                    .withWorkPhone(String.format("20\n%s", i))
+                    .withEmail(String.format("email1\n%s", i))
+                    .withEmail2(String.format("email2\n%s", i))
+                    .withEmail3(String.format("email3\n%s", i))
+                    .withGroup(String.format("test", i)));
         }
         return contacts;
     }

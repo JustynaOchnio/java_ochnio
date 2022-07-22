@@ -20,8 +20,7 @@
 0</email2>
     <email3>email3
 0</email3>
-    <group>test1
-0</group>
+    <group>test</group>
   </contact>
   <contact>
     <firstname>firstname
@@ -44,8 +43,7 @@
 1</email2>
     <email3>email3
 1</email3>
-    <group>test1
-1</group>
+    <group>test</group>
   </contact>
   <contact>
     <firstname>firstname
@@ -68,7 +66,6 @@
 2</email2>
     <email3>email3
 2</email3>
-    <group>test1
-2</group>
+    <group>test</group>
   </contact>
 </list>
