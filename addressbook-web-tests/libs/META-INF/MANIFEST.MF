@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Ant-Version: Apache Ant 1.6.5
-Created-By: 1.4.1_02-b06 (Sun Microsystems Inc.)
-
-Name: org/slf4j/
-Implementation-Title: NOP implementation
-Implementation-Version: 1.0.2
-Implementation-Vendor: SLF4J.ORG
-
