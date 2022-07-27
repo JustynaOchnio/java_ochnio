@@ -79,7 +79,7 @@ public class ContactData {
     @Type(type="text")
     private String photo;
 
-    public File getPhoto() {
+    private File getPhoto() {
         return new File(photo) ;
     }
 
