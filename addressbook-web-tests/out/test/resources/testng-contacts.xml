@@ -5,8 +5,6 @@
         <classes>
             <class name="pl.java_ochnio.addressbook.tests.ContactCreationTests" />
             <class name="pl.java_ochnio.addressbook.tests.ContactModificationTests" />
-            <class name="pl.java_ochnio.addressbook.tests.ContactPhoneAddressEmailTests" />
-            <class name="pl.java_ochnio.addressbook.tests.ContactDetailsTests" />
             <class name="pl.java_ochnio.addressbook.tests.ContactDeletionTests" />
         </classes>
     </test>
