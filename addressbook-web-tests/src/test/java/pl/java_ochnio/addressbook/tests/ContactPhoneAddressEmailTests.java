@@ -16,8 +16,7 @@ public class ContactPhoneAddressEmailTests extends TestBase {
         if (app.contact().all().size() == 0) {
             app.contact().create(new ContactData().withFirstname("test1").withLastname("test2").withAddress("test address")
                     .withEmail("email1").withEmail2("email2").withEmail3("email3")
-                    .withHomePhone("10").withMobilePhone("20").withWorkPhone("30")
-                    .withGroup("test1"), true);
+                    .withHomePhone("10").withMobilePhone("20").withWorkPhone("30"), true);
         }
         ContactData contact = app.contact().all().iterator().next();
         ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);

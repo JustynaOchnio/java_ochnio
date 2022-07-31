@@ -6,6 +6,8 @@ import org.openqa.selenium.json.TypeToken;
 import org.testng.annotations.*;
 import pl.java_ochnio.addressbook.model.ContactData;
 import pl.java_ochnio.addressbook.model.Contacts;
+import pl.java_ochnio.addressbook.model.Groups;
+import pl.java_ochnio.addressbook.model.GroupData;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -55,6 +57,7 @@ public class ContactCreationTests extends TestBase {
 
     @Test(dataProvider = "validContactsFromXml")
     public void testContactCreation(ContactData contact) throws Exception {
+        Groups groups = app.db().groups();
         Contacts before = app.db().contacts();
         app.contact().create(contact, true);
         assertThat(app.contact().count(), equalTo(before.size() + 1));
@@ -65,9 +68,10 @@ public class ContactCreationTests extends TestBase {
 
     @Test(enabled = false)
     public void testBadContactCreation() throws Exception {
+        Groups groups = app.db().groups();
         Contacts before = app.contact().all();
-        ContactData contact = new ContactData().withFirstname("firstname'").withLastname("lastname'").withGroup("test1");
-        app.contact().create(contact, true);
+        ContactData contact = new ContactData().withFirstname("firstname'").withLastname("lastname'");
+        app.contact().create(contact.inGroup(groups.iterator().next()), true);
         assertThat(app.contact().count(), equalTo(before.size()));
         Contacts after = app.contact().all();
         assertThat(after, equalTo(before));

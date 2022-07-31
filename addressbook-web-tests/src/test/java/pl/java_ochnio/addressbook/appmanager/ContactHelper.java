@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import pl.java_ochnio.addressbook.model.ContactData;
 import pl.java_ochnio.addressbook.model.Contacts;
+import pl.java_ochnio.addressbook.model.GroupData;
 import pl.java_ochnio.addressbook.tests.ContactPhoneAddressEmailTests;
 
 import java.util.Arrays;
@@ -27,7 +28,7 @@ public class ContactHelper extends HelperBase {
         click(By.id("content"));
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
-       // attach(By.name("photo"), contactData.getPhoto());
+        // attach(By.name("photo"), contactData.getPhoto());
         type(By.name("company"), contactData.getCompany());
         type(By.name("address"), contactData.getAddress());
         type(By.name("home"), contactData.getHomePhone());
@@ -38,11 +39,13 @@ public class ContactHelper extends HelperBase {
         type(By.name("email3"), contactData.getEmail3());
 
         if (creation) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+            if (contactData.getGroups().size() > 0) {
+                Assert.assertTrue(contactData.getGroups().size() == 1);
+                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
+            }
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
-
     }
 
     public void openNewContactPage() {
@@ -155,6 +158,7 @@ public class ContactHelper extends HelperBase {
     }
 
     private Contacts contactCache = null;
+
 
     public Contacts all() {
         if (contactCache != null) {

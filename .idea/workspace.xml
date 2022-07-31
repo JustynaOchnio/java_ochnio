@@ -95,7 +95,7 @@
       <recent name="C:\QA course\GitHub\java_ochnio\addressbook-web-tests\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupDeletionTests.testGroupDeletion">
+  <component name="RunManager" selected="TestNG.ContactModificationTests">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -122,6 +122,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-contacts.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactDeletionTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -170,7 +180,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.GroupCreationTests" />
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactDeletionTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -178,35 +188,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreationTests.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.java_ochnio.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.GroupCreationTests" />
-      <option name="METHOD_NAME" value="testGroupCreation" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupDeletionTests.testGroupDeletion" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -215,9 +197,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.GroupDeletionTests" />
-      <option name="METHOD_NAME" value="testGroupDeletion" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.ContactModificationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -252,28 +233,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupModificationTests.testGroupModification" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HbConnectionTest.testHbConnection" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pl.java_ochnio.addressbook.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.GroupModificationTests" />
-      <option name="METHOD_NAME" value="testGroupModification" />
-      <option name="GROUP_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.HbConnectionTest" />
+      <option name="METHOD_NAME" value="testHbConnection" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -285,19 +256,19 @@
       <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
       <item itemvalue="TestNG.GroupModificationTests" />
-      <item itemvalue="TestNG.GroupDeletionTests.testGroupDeletion" />
-      <item itemvalue="TestNG.GroupCreationTests" />
-      <item itemvalue="TestNG.GroupModificationTests.testGroupModification" />
-      <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
+      <item itemvalue="TestNG.C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
+      <item itemvalue="TestNG.ContactDeletionTests" />
+      <item itemvalue="TestNG.ContactModificationTests" />
+      <item itemvalue="TestNG.HbConnectionTest.testHbConnection" />
       <item itemvalue="TestNG.ContactCreationTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupDeletionTests.testGroupDeletion" />
-        <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
-        <item itemvalue="TestNG.GroupCreationTests" />
-        <item itemvalue="TestNG.GroupModificationTests.testGroupModification" />
+        <item itemvalue="TestNG.ContactModificationTests" />
+        <item itemvalue="TestNG.C:/QA course/GitHub/java_ochnio/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
         <item itemvalue="TestNG.ContactCreationTests" />
+        <item itemvalue="TestNG.ContactDeletionTests" />
+        <item itemvalue="TestNG.HbConnectionTest.testHbConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -332,16 +303,10 @@
           <properties class="org.hibernate.boot.registry.classloading.spi.ClassLoadingException" package="org.hibernate.boot.registry.classloading.spi" />
           <option name="timeStamp" value="33" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/appmanager/ContactHelper.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/pl/java_ochnio/addressbook/tests/ContactModificationTests.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.thoughtworks.xstream.security.ForbiddenClassException" package="com.thoughtworks.xstream.security" />
+          <option name="timeStamp" value="40" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
