@@ -12,6 +12,7 @@ import pl.java_ochnio.addressbook.tests.ContactPhoneAddressEmailTests;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 public class ContactHelper extends HelperBase {
@@ -46,6 +47,30 @@ public class ContactHelper extends HelperBase {
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
+    }
+
+    public void addContactToGroup(ContactData contact) {
+        selectContactById(contact.getId());
+        expandGroups();
+        selectGroup(contact);
+        addToContact();
+    }
+
+    private void addToContact() {
+        wd.findElement(By.name("add")).click();
+    }
+
+    private void selectGroup(ContactData contactData) {
+        Select select = new Select(wd.findElement(By.name("to_group")));
+        List<WebElement> groups = select.getOptions();
+        int groupSize = groups.size();
+        Random num = new Random();
+        int iSelect = num.nextInt(groupSize);
+        select.selectByIndex(iSelect);
+    }
+
+    private void expandGroups() {
+        wd.findElement(By.name("to_group")).click();
     }
 
     public void openNewContactPage() {
