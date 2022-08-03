@@ -92,7 +92,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ToolWindowBuild.ShowToolbar": "false",
     "last_opened_file_path": "C:/QA course/GitHub/java_ochnio/mantis-tests/build.gradle",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
@@ -115,7 +115,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddContactToGroupTests.addContactToGroup">
+  <component name="RunManager" selected="TestNG.LoginTests.testLogin">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -262,17 +262,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HbConnectionTest.testHbConnection" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
+    <configuration name="LoginTests.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mantis-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.java_ochnio.addressbook.tests.*" />
+          <option name="PATTERN" value="pl.java_ochnio.mantis.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.java_ochnio.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.addressbook.tests.HbConnectionTest" />
-      <option name="METHOD_NAME" value="testHbConnection" />
+      <option name="PACKAGE_NAME" value="pl.java_ochnio.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="pl.java_ochnio.mantis.tests.LoginTests" />
+      <option name="METHOD_NAME" value="testLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -285,19 +285,19 @@
       <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
       <item itemvalue="TestNG.GroupModificationTests" />
+      <item itemvalue="TestNG.LoginTests.testLogin" />
       <item itemvalue="TestNG.AddContactToGroupTest.addContactToGroupTest" />
       <item itemvalue="TestNG.AddContactToGroupTests.addContactToGroup" />
-      <item itemvalue="TestNG.HbConnectionTest.testHbConnection" />
       <item itemvalue="TestNG.GroupCreationTests" />
       <item itemvalue="TestNG.ContactCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTests.testLogin" />
         <item itemvalue="TestNG.AddContactToGroupTests.addContactToGroup" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.AddContactToGroupTest.addContactToGroupTest" />
         <item itemvalue="TestNG.ContactCreationTests" />
-        <item itemvalue="TestNG.HbConnectionTest.testHbConnection" />
       </list>
     </recent_temporary>
   </component>
