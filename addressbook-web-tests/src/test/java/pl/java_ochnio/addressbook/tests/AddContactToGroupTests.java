@@ -21,7 +21,7 @@ public class AddContactToGroupTests extends TestBase {
     }
 
 
-    @Test
+    @Test(enabled = false)
     public void addContactToGroup() throws Exception {
         ContactData contact = new ContactData();
         Contacts contacts = app.db().contacts();
