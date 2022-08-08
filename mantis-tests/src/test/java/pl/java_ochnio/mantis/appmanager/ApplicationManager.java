@@ -1,7 +1,5 @@
 package pl.java_ochnio.mantis.appmanager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +19,10 @@ public class ApplicationManager {
     private RegistrationHelper registrationHelper;
     private FtpHelper ftp;
     private MailHelper mailHelper;
+
+    private ResetPasswordHelper resetPasswordHelper;
+
+    private DbHelper db;
 
     public ApplicationManager(String browser) throws IOException {
         this.browser = browser;
@@ -80,5 +82,16 @@ public class ApplicationManager {
             mailHelper = new MailHelper(this);
         }
         return mailHelper;
+    }
+
+    public ResetPasswordHelper resetPassword() {
+        return new ResetPasswordHelper(this);
+    }
+
+    public DbHelper db () {
+        if (db == null) {
+            db = new DbHelper();
+        }
+        return db;
     }
 }
