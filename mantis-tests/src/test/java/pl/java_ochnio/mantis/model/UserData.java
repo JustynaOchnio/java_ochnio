@@ -12,12 +12,19 @@ import javax.persistence.Entity;
 public class UserData {
 
 
+    public String getUsername() {
+        return username;
+    }
+
     @Id
     @Column(name = "id")
     private int id = Integer.MAX_VALUE;
 
     @Column(name = "username")
     private String username;
+
+    @Column(name = "email")
+    private String email;
 
     public UserData withId(int id) {
         this.id = id;
@@ -28,8 +35,17 @@ public class UserData {
         return id;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public UserData withUsername(String username) {
         this.username = username;
+        return this;
+    }
+
+    public UserData withEmail(String email) {
+        this.email = email;
         return this;
     }
 
@@ -37,7 +53,7 @@ public class UserData {
     public String toString() {
         return "UserData{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

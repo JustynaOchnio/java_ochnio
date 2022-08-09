@@ -7,7 +7,6 @@ public class RegistrationHelper extends HelperBase {
     }
 
     public void start(String username, String email) {
-
         wd.get(app.getProperty("web.baseUrl") + "/signup_page.php");
         type(By.name("username"), username);
         type(By.name("email"), email);

@@ -16,10 +16,11 @@ public class DbConnectionTest {
             conn =
                     DriverManager.getConnection("jdbc:mysql://localhost/bugtracker?user=root&password=");
             Statement st = conn.createStatement();
-            ResultSet rs = st.executeQuery("select id,username from mantis_user_table");
+            ResultSet rs = st.executeQuery("select id,username,email from mantis_user_table");
             Users users = new Users();
             while (rs.next()) {
-                users.add(new UserData().withId(rs.getInt("id")).withUsername(rs.getString("username")));
+                users.add(new UserData().withId(rs.getInt("id")).withUsername(rs.getString("username"))
+                        .withEmail(rs.getString("email")));
             }
             rs.close();
             st.close();
