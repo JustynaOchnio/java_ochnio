@@ -1,6 +1,5 @@
 package pl.java_ochnio.mantis.appmanager;
 
-import org.apache.commons.net.ftp.FTPClient;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -15,7 +14,7 @@ public class DbHelper {
 
     private final SessionFactory sessionFactory;
 
-    public DbHelper() {
+    public DbHelper(ApplicationManager app) {
         // A SessionFactory is set up once for an application!
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
                 .configure() // configures settings from hibernate.cfg.xml

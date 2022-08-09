@@ -16,6 +16,7 @@ dependencies {
     implementation 'org.hibernate:hibernate-core:5.6.10.Final'
     implementation 'com.beust:jcommander:1.82'
     implementation 'com.thoughtworks.xstream:xstream:1.4.19'
+    implementation 'biz.futureware.mantis:mantis-axis-soap-client:1.2.19'
 }
 
 test {

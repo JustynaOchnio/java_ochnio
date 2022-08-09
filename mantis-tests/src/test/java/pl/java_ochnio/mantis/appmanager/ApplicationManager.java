@@ -21,8 +21,10 @@ public class ApplicationManager {
     private MailHelper mailHelper;
 
     private ResetPasswordHelper resetPasswordHelper;
+    private DbHelper dbHelper;
 
-    private DbHelper db;
+    private SoapHelper soapHelper;
+
 
     public ApplicationManager(String browser) throws IOException {
         this.browser = browser;
@@ -85,13 +87,23 @@ public class ApplicationManager {
     }
 
     public ResetPasswordHelper resetPassword() {
-        return new ResetPasswordHelper(this);
+        if (resetPasswordHelper == null) {
+            resetPasswordHelper = new ResetPasswordHelper(this);
+        }
+        return resetPasswordHelper;
     }
 
     public DbHelper db () {
-        if (db == null) {
-            db = new DbHelper();
+        if (dbHelper == null) {
+            dbHelper = new DbHelper(this);
         }
-        return db;
+        return dbHelper;
+    }
+
+    public SoapHelper soap () {
+        if (soapHelper == null) {
+            soapHelper = new SoapHelper(this);
+        }
+        return soapHelper;
     }
 }
